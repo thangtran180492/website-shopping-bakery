@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap 5.3.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!--  icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!--  css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/home.css">
+  <!--  css -->
+  <script async src="js/control.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- menu -->
+
+  <head>
+    <div class="fixed-top">
+      <div class="container">
+        <nav class="navbar navbar-expand-md pt-4">
+          <div id="container-menu" class="container-fluid justify-content-between">
+            <a class="btn navbar-brand" href="#" onclick="controlPage('home')">
+              <img id="navbar-logo" class="rounded-pill" src="asset/icons/5520772.jpg" />
+            </a>
+            <button id="button-menu" class="btn navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#mynavbar">
+              <i class="bi bi-card-list"></i>
+            </button>
+            <div class="collapse navbar-collapse text-center justify-content-end" id="mynavbar">
+              <ul class="navbar-nav navbar-expand-sm">
+                <li class="nav-item p-2">
+                  <a class="btn " href="#" onclick="controlPage('home')">Home</a>
+                </li>
+                <li class="nav-item dropdown p-2">
+                  <a class="btn dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                  </a>
+                  <ul class="nav-categories dropdown-menu text-center" aria-labelledby="navbarDropdownMenuLink"
+                    style="background-color: #000000a1;">
+                    <li><a class="btn dropdown-item" href="#" onclick="controlPage('categories')">CAKE</a>
+                    </li>
+                    <li><a class="btn dropdown-item" href="#" onclick="controlPage('categories')">PIE</a>
+                    </li>
+                    <li><a class="btn dropdown-item" href="#" onclick="controlPage('categories')">COOKIE</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item p-2">
+                  <a class="btn" href="#">About us</a>
+                </li>
+              </ul>
+            </div>
+            <a id="cart" class="btn navbar-brand btn-floating mx-1" href="#" onclick="controlPage('cart')">
+              <i class="bi bi-cart"></i>
+              <span>3</span>
+            </a>
+            <a id="user" class="btn navbar-brand btn-floating mx-1" href="#" onclick="controlPage('login')">
+              <i class="bi bi-person-circle"></i>
+            </a>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </head>
+  <main role="main">
+    <!-- column carousel Example Indicators -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#cake" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#bread" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#drink" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="asset/photos/cake/cake1/1.jpg" class="d-block w-100" alt="first cake">
+          <div class="carousel-caption d-none d-md-block">
+            <a id="button" class="py-2 px-4 rounded-pill text-uppercase" href="#"
+              onclick="controlPage('categories')">Cake</a>
+            <p class="title-header alert mt-3" role="alert">Some representative placeholder content for the first slide.
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="asset/photos/pie/pie1/1.jpg" class="d-block w-100" alt="second bread">
+          <div class="carousel-caption d-none d-md-block">
+            <a id="button" class="py-2 px-4 rounded-pill text-uppercase" href="#"
+              onclick="controlPage('categories')">pie</a>
+            <p class="title-header alert mt-3">Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="asset/photos/cookie/cookie1/1.jpg" class="d-block w-100" alt="end drink">
+          <div class="carousel-caption d-none d-md-block">
+            <a id="button" class="py-2 px-4 rounded-pill text-uppercase" href="#"
+              onclick="controlPage('categories')">cookie</a>
+            <p class="title-header alert mt-3">Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- column marketing -->
+    <div id="column-marketing" class="container">
+      <div class="my-4" style="border-bottom: solid 1px rgb(15, 4, 0);">
+        <p class="text-center">FAVORTITE TRENDS</p>
+      </div>
+      <div class="row row-cols-sm-12 row-cols-lg-3">
+        <!-- column-->
+        <div class="col text-center">
+          <img id="image-item-marketing" class="rounded" src="asset/photos/cake/cake3/1.jpg"
+            alt="Generic placeholder image">
+          <h2>Black and White Mousse Cake</h2>
+          <p>100.000 VND</p>
+          <a id="button" class="btn btn-secondary rounded-pill px-5" onclick="controlPage('cart')" role="button">
+            View detail »
+          </a>
+        </div>
+        <div class="col text-center">
+          <img id="image-item-marketing" class="rounded" src="asset/photos/pie/pie3/1.jpg"
+            alt="Generic placeholder image">
+          <h2>Classic Pecan Pie</h2>
+          <p>95.000 VND</p>
+          <a id="button" class="btn btn-secondary rounded-pill px-5" onclick="controlPage('cart')" role="button">
+            View detail »
+          </a>
+        </div>
+        <div class="col text-center">
+          <img id="image-item-marketing" class="rounded" src="asset/photos/cookie/cookie3/1.jpg"
+            alt="Generic placeholder image">
+          <h2>Gluten-Free Cookie and Brownie Crate</h2>
+          <p>45.000 VND</p>
+          <a id="button" class="btn btn-secondary rounded-pill px-5" onclick="controlPage('cart')" role="button">
+            View detail »
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- slogan -->
+    <div id="container-slogan">
+      <div>
+        <p class="my-4 text-center">This bright and warm corner in bakery.</p>
+      </div>
+      <div id="image-slogan" class="row">
+        <img class="col-2 m-0 p-0 d-none d-lg-block object-fit-cover" src="asset/photos/slogan1.jpg" alt="first cake">
+        <img class="col-3 col-lg-2 m-0 p-0 d-none d-md-block object-fit-cover" src="asset/photos/slogan6.jpg"
+          alt="first cake">
+        <img class="col-4 col-md-3 col-lg-2 m-0 p-0 object-fit-cover" src="asset/photos/slogan2.jpg" alt="first cake">
+        <img class="col-4 col-md-3 col-lg-2 m-0 p-0 object-fit-cover" src="asset/photos/slogan3.jpg" alt="first cake">
+        <img class="col-4 col-md-3 col-lg-2 m-0 p-0 object-fit-cover" src="asset/photos/slogan4.jpg" alt="first cake">
+        <img class="col-2 m-0 p-0 d-none d-lg-block object-fit-cover" src="asset/photos/slogan5.jpg" alt="first cake">
+      </div>
+      <div>
+        <p class="my-4 text-center">Enjoy this cake as a breakfast idea or an afternoon tea snack to truly feel its
+          enticing blend</p>
+      </div>
+    </div>
+
+    <!-- row marketing -->
+    <div id="main-marketing" class="container">
+      <div class="row featurette mb-5">
+        <!-- row image right -->
+        <div class="col-md-6 text-end m-auto">
+          <h2 class="featurette-heading">
+            Sampler Snack Basket
+          </h2>
+          <h3 class="text-muted">It'll blow your mind.</h3>
+          <p class="lead">
+            This charming gold tray is filled with a collection of treats. Perfect for making a statement.
+            This gift includes 6 Gourmet Brownies (Chocolate Truffle, Chocolate Truffle with Walnut, Marble Cheesecake
+            and Cookies & Cream)
+            and 6 Gourmet Cookies (Triple Chocolate, Chocolate Chunk, Oatmeal Raisin and Vanilla Sugar)
+          </p>
+          <a id="button" class="btn btn-secondary rounded-pill px-5 mb-5" onclick="controlPage('product')" href="#"
+            role="button">View detail »</a>
+        </div>
+        <div id="content-image-" class="col-md-6">
+          <img class="featurette-image object-fit-cover img-fluid mx-auto" data-src="holder.js/500x500/auto"
+            alt="500x500" style="width: 100%; height: 100%;" src="asset/photos/cookie/cookie2/1.jpg"
+            data-holder-rendered="true">
+        </div>
+      </div>
+      <!-- row image left -->
+      <div class="row featurette  mb-5">
+        <div class="col-md-6 order-md-2 m-auto">
+          <h2 class="featurette-heading">Sour Cherry Pie</h2>
+          <span class="text-muted">See for yourself.</span>
+          <p class="lead">
+            Plump cherries combine in a delightful duet with tender flaky crust, making this sour cherry pie the perfect
+            treat for a summer picnic.
+            Send your cherry lover one today and let them indulge in fruit decadence! Arrives in an elegant gift box
+            with the greeting card of your choice.
+          </p>
+          <a id="button" class="btn btn-secondary rounded-pill px-5 mb-5" onclick="controlPage('product')" href="#"
+            role="button">View detail »</a>
+        </div>
+        <div class="col-md-6 order-md-1">
+          <img class="featurette-image object-fit-cover img-fluid mx-auto" data-src="holder.js/500x500/auto"
+            alt="500x500" style="width: 100%; height: 100%;" src="asset/photos/pie/pie2/1.jpg"
+            data-holder-rendered="true">
+        </div>
+      </div>
+      <!-- row image right -->
+      <div class="row featurette  mb-5">
+        <div class="col-md-6 text-end m-auto">
+          <h2 class="featurette-heading">Chocolate Mousse Torte Cake</h2>
+          <span class="text-muted">It'll blow your mind.</span>
+          <p class="lead">
+            Two layers of coffee washed cake are filled with a light buttercream and topped with a delectable coffee
+            whipped cream.
+            As an extra touch, this delight is then sprinkled with dark chocolate and cocoa.
+            With just the right mixture of coffee and chocolate, you can be sure that this Italian favorite will perk up
+            anyone's day.
+            Includes a Greeting Card and is packaged in an elegant gift box
+          </p>
+          <a id="button" class="btn btn-secondary rounded-pill px-5 mb-5" onclick="controlPage('product')" href="#"
+            role="button">View detail »</a>
+        </div>
+        <div class="col-md-6">
+          <img class="featurette-image object-fit-cover img-fluid mx-auto" data-src="holder.js/500x500/auto"
+            alt="500x500" style="width: 100%; height: 100%;" src="asset/photos/cake/cake1/1.jpg"
+            data-holder-rendered="true">
+        </div>
+      </div>
+    </div>
+
+    <!-- information about the restaurant -->
+    <div id="store-information" class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="thumbnail text-center">
+            <img src="asset/photos/restaurant/restaurant2.jpg" alt="Lights" style="width:100%">
+            <div class="caption my-2">
+              <h5>Premium Ingredients</h5>
+            </div>
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail text-center">
+            <img src="asset/photos/restaurant/restaurant3.jpg" alt="Nature" style="width:100%">
+            <div class="caption my-2">
+              <h5>Many types of cakes</h5>
+            </div>
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="thumbnail text-center">
+            <img src="asset/photos/restaurant/restaurant4.jpg" alt="Fjords" style="width:100%">
+            <div class="caption my-2">
+              <h5>Hương vị thơm ngon</h5>
+            </div>
+            <div class="caption">
+              <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- information local bakery -->
+    <div id="local-information" class="container">
+      <div class="row featurette my-5">
+        <!-- row image right -->
+        <div id="local" class="col-md-7 text-center align-middle">
+          <h3 class="featurette-heading text-uppercase">title store</h3>
+          <p class="lead">Number - Street - City - Country</p>
+          <p class="m-0">Open 08:00 A.M</p>
+          <p class="m-0">Close 10:00 P.M</p>
+        </div>
+        <div class="col-md-5">
+          <img class="featurette-image object-fit-cover img-fluid mx-auto" data-src="holder.js/500x500/auto"
+            alt="500x500" style="width: 500px; height: 500px;" src="asset/photos/restaurant/restaurant1.jpg"
+            data-holder-rendered="true">
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="footer-page">
+    <footer class="py-5 mx-5">
+      <div class="row">
+        <div class="column-footer col-lg-3 col-md-4 col-sm-12 mb-4">
+          <h5>About us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <p class="p-0 text-break">The bakery is an encyclopedia of flavors, a world atlas of traditional dishes,
+                local ingredients, and authentic restaurants.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column-footer col-lg-3 col-md-4 col-sm-12 mb-4">
+          <h5>Serice customer</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item m-1 text-break"><i class="bi bi-telephone me-2"></i>+123 456 789</li>
+            <li class="nav-item m-1 text-break"><i
+                class="bi bi-envelope-at-fill me-2"></i>Emai44444444444444444l@gmai.com</li>
+          </ul>
+        </div>
+
+        <div class="column-footer col-lg-3 col-md-4 col-sm-12s">
+          <h5>Come visit us</h5>
+          <ul class="nav flex-column mb-4">
+            <li class="nav-item m-0"><i class="bi bi-shop me-2"></i>Bakery</li>
+            <li class="nav-item my-1"><i class="bi bi-geo-alt-fill  me-2"></i>Number - Street - City - Country</li>
+            <li class="nav-item m-0">
+              <p class="p-0 m-0 text-break">Open 08 : 00 A.M</p>
+            </li>
+            <li class="nav-item m-0">
+              <p class="p-0 m-0 text-break">Close 10 : 00 P.M</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="image-footer col-lg-3 col-md-8 col-sm-12 rounded-3">
+          <h5>Instagram</h5>
+          <div class="row gallery">
+            <div class="col">
+              <img class="img-fluid" src="asset/photos/restaurant/restaurant1.jpg" alt="Image">
+              <img class="mt-2 img-fluid" src="asset/photos/bread/bread1.jpg" alt="Image">
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="asset/photos/cake/cake1.jpg" alt="Image">
+              <img class="mt-2 img-fluid" src="asset/photos/drink/drink1.jpg" alt="Image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container p-4 pb-0 text-center">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+              class="bi bi-facebook"></i>
+          </a>
+
+          <!-- Twitter -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+              class="bi bi-twitter"></i>
+          </a>
+
+          <!-- Google -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+              class="bi bi-google"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+              class="bi bi-instagram"></i>
+          </a>
+        </section>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

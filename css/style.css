@@ -1,0 +1,13 @@
+@charset "UTF-8";
+.footer-page {
+    background-color: rgb(15, 4, 0);
+}
+.column-footer{
+    color: white
+}
+.image-footer {
+    background-color: white;
+    padding: 10px;
+}
+
+

@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- bootstrap 5.3.2 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <!--  icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <!--  css -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/header.css">
+  <link rel="stylesheet" href="css/categories.css">
+  <!--  javascrip -->
+  <script async src="js/control.js"></script>
+  <script src="js/categories/controlcategories.js"></script>
+  <!--  javascrip -->
+  <script type="module" src="js/categories/loading.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- menu -->
+  <head>
+    <div class="fixed-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-md pt-4">
+                <div id="container-menu" class="container-fluid justify-content-between">
+                    <a class="btn navbar-brand" href="#" onclick="controlPage('home')">
+                        <img id="navbar-logo" class="rounded-pill" src="asset/icons/5520772.jpg" />
+                    </a>
+                    <button id="button-menu" class="btn navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#mynavbar">
+                        <i class="bi bi-card-list"></i>
+                    </button>
+                    <div class="collapse navbar-collapse text-center justify-content-end" id="mynavbar">
+                        <ul class="navbar-nav navbar-expand-sm">
+                            <li class="nav-item p-2">
+                                <a class="btn " href="#" onclick="controlPage('home')">Home</a>
+                            </li>
+                            <li class="nav-item dropdown p-2">
+                                <a class="btn dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Categories
+                                </a>
+                                <ul class="nav-categories dropdown-menu text-center"
+                                    aria-labelledby="navbarDropdownMenuLink" style="background-color: #000000a1;">
+                                    <li><a class="btn dropdown-item" href="#"
+                                            onclick="controlPage('categories')">CAKE</a>
+                                    </li>
+                                    <li><a class="btn dropdown-item" href="#"
+                                            onclick="controlPage('categories')">PIE</a>
+                                    </li>
+                                    <li><a class="btn dropdown-item" href="#"
+                                            onclick="controlPage('categories')">COOKIE</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item p-2">
+                                <a class="btn" href="#">About us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a id="cart" class="btn navbar-brand btn-floating mx-1" href="#" onclick="controlPage('cart')">
+                        <i class="bi bi-cart"></i>
+                        <span>3</span>
+                    </a>
+                    <a id="user" class="btn navbar-brand btn-floating mx-1" href="#" onclick="controlPage('login')">
+                        <i class="bi bi-person-circle"></i>
+                    </a>
+                </div>
+            </nav>
+        </div>
+    </div>
+</head>
+  <main role="main">
+    <!-- carousel multil -->
+    <div>
+      <div id="image-categories" class="row">
+        <img class="col-2 d-none d-lg-block m-0 p-0 object-fit-cover" src="asset/photos/slogan1.jpg" alt="first cake">
+        <img class="col-3 col-lg-2 d-none d-md-block m-0 p-0  object-fit-cover" src="asset/photos/slogan6.jpg"
+          alt="first cake">
+        <img class="col-12 col-md-6 col-lg-4 m-0 p-0 object-fit-cover" src="asset/photos/restaurant/restaurant1.jpg"
+          alt="first cake">
+        <img class="col-3 col-lg-2 d-none d-md-block m-0 p-0 object-fit-cover" src="asset/photos/slogan4.jpg"
+          alt="first cake">
+        <img class="col-2 d-none d-lg-block m-0 p-0 object-fit-cover" src="asset/photos/slogan5.jpg" alt="first cake">
+      </div>
+    </div>
+
+    <!-- categories -->
+    <div id="categories" class="container">
+      <div class="row">
+        <!-- list -->
+        <div class="col-md-4 col-lg-3 mb-3">
+          <div class="rounded border border-gray-300 shadow">
+            <div class="py-2 mb-2 bg-secondary text-white rounded-top">
+              <h4 class="text-uppercase text-center">categories</h4>
+            </div>
+            <ul id="group-btn-kind" class="group-btn-kind list-group list-group-flush">
+              <li class="list-group-item p-0 m-0 border-0">
+                <button onclick="buttonUpdateKindItem();" class="btn-kind btn rounded align-self-center d-flex justify-content-between">
+                  <span class="ms-2">ALL</span>
+                  <span class="badge bg-primary">0</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- items -->
+        <div class="col-md-8 col-lg-9">
+          <!-- product views -->
+          <div class="category-search-filter mb-3">
+            <div class="row rounded border border-gray-300 shadow p-2">
+              <div class="col align-self-center">
+                <strong>Short</strong>
+                <select>
+                  <option>Most Recent</option>
+                  <option value="1">Most Popular</option>
+                  <option value="2">Lowest Price</option>
+                  <option value="4">Highest Price</option>
+                </select>
+              </div>
+              <div class="col d-flex flex-row-reverse bd-highlight">
+                <div class="ms-2">
+                  <button class="btn btn-dark bi bi-columns-gap" onclick="preventDefault('row');">
+                  </button>
+                </div>
+                <div class="ms-2">
+                  <button class="btn btn-dark bi bi-view-stacked " onclick="preventDefault('column');">
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Products list -->
+          <div id="group-item" class="row mt-30">
+
+            <!-- product card 1 -->
+            <div id="item" class="col-12 col-lg-4 col-md-6 mb-5">
+              <div class="card" style="vertical-align: middle;">
+                <div class="row g-0">
+                  <div id="card-col" class="col-12">
+                    <a href="#">
+                      <img class="card-img-item img-fluid rounded object-fit-cover" src="asset/photos/bread/bread1.jpg">
+                    </a>
+                  </div>
+                  <div id="card-col" class="col-12">
+                    <div class="card-body">
+                      <h3 class="card-title"><a href="single.html">Cake passion</a></h3>
+                      <ul class="list-inline product-meta">
+                        <li class="list-inline-item">
+                          <h4>10.00$$$</h4>
+                        </li>
+                        <li class="list-inline-item">
+                          <h6>26th December</h6>
+                        </li>
+                      </ul>
+                      <p class="card-text">Bake this impressive tropical sponge for a special occasion. This scrumptious
+                        triple-layer passion fruit cake is also perfect for Birthday's Day</p>
+                      <div class="product-ratings">
+                        <ul class="list-inline">
+                          <li class="list-inline-item selected"><i class="bi bi-star-fill"></i>
+                          </li>
+                          <li class="list-inline-item selected"><i class="bi bi-star-fill"></i>
+                          </li>
+                          <li class="list-inline-item selected"><i class="bi bi-star-fill"></i>
+                          </li>
+                          <li class="list-inline-item selected"><i class="bi bi-star-half"></i>
+                          </li>
+                          <li class="list-inline-item"><i class="bi bi-star"></i>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="product-add-cart">
+                        <a class="btn btn-primary" href="#" role="button">
+                          <i class="bi bi-cart-plus"></i>
+                          <span>Add cart</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <div class="footer-page">
+    <footer class="py-5 mx-5">
+      <div class="row">
+        <div class="column-footer col-lg-3 col-md-4 col-sm-12 mb-4">
+          <h5>About us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <p class="p-0 text-break">The bakery is an encyclopedia of flavors, a world atlas of traditional dishes,
+                local ingredients, and authentic restaurants.</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="column-footer col-lg-3 col-md-4 col-sm-12 mb-4">
+          <h5>Serice customer</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item m-1 text-break"><i class="bi bi-telephone me-2"></i>+123 456 789</li>
+            <li class="nav-item m-1 text-break"><i
+                class="bi bi-envelope-at-fill me-2"></i>Emai44444444444444444l@gmai.com</li>
+          </ul>
+        </div>
+
+        <div class="column-footer col-lg-3 col-md-4 col-sm-12s">
+          <h5>Come visit us</h5>
+          <ul class="nav flex-column mb-4">
+            <li class="nav-item m-0"><i class="bi bi-shop me-2"></i>Bakery</li>
+            <li class="nav-item my-1"><i class="bi bi-geo-alt-fill  me-2"></i>Number - Street - City - Country</li>
+            <li class="nav-item m-0">
+              <p class="p-0 m-0 text-break">Open 08 : 00 A.M</p>
+            </li>
+            <li class="nav-item m-0">
+              <p class="p-0 m-0 text-break">Close 10 : 00 P.M</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="image-footer col-lg-3 col-md-8 col-sm-12 rounded-3">
+          <h5>Instagram</h5>
+          <div class="row gallery">
+            <div class="col">
+              <img class="img-fluid" src="asset/photos/restaurant/restaurant1.jpg" alt="Image">
+              <img class="mt-2 img-fluid" src="asset/photos/bread/bread1.jpg" alt="Image">
+            </div>
+            <div class="col">
+              <img class="img-fluid" src="asset/photos/cake/cake1.jpg" alt="Image">
+              <img class="mt-2 img-fluid" src="asset/photos/drink/drink1.jpg" alt="Image">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container p-4 pb-0 text-center">
+        <!-- Section: Social media -->
+        <section class="mb-4">
+          <!-- Facebook -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #3b5998;" href="#!" role="button"><i
+              class="bi bi-facebook"></i>
+          </a>
+
+          <!-- Twitter -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #55acee;" href="#!" role="button"><i
+              class="bi bi-twitter"></i>
+          </a>
+
+          <!-- Google -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #dd4b39;" href="#!" role="button"><i
+              class="bi bi-google"></i>
+          </a>
+
+          <!-- Instagram -->
+          <a class="btn text-white btn-floating m-1" style="background-color: #ac2bac;" href="#!" role="button"><i
+              class="bi bi-instagram"></i>
+          </a>
+        </section>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>

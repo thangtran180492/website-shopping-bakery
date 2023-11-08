@@ -1,0 +1,60 @@
+@charset "UTF-8";
+@keyframes button {
+    from {
+        background-color: white;
+        columns: rgb(54, 13, 0);
+    }
+    to {
+        color: white;
+        background-color: rgb(54, 13, 0);
+    }
+    
+}
+/* carousel Indicators */
+div#carouselExampleIndicators{
+    margin-bottom: 70px;
+}
+a#button {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: rgb(54, 13, 0);
+    background-color: #FFF;
+}
+.title-header {
+    background-color: rgba(54, 54, 54, 0.58);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+}
+/* column marketing */
+
+#column-marketing {
+    margin-bottom: 70px;
+}
+#image-item-marketing {
+    height: 170px;
+}
+a#button:hover {
+    animation: button 1s;
+    animation-fill-mode: forwards;
+    cursor: pointer;
+}
+/* slogan */
+#container-slogan {
+    margin: 100px 0px;
+}
+#image-slogan img{
+    height: 170px;
+}
+/* main marketing */
+#main-marketing{
+    margin-bottom: 70px;
+    border-bottom: solid 1px #7a7a7a;
+}
+/* information local bakery */
+#local-information {
+    margin-bottom: 70px;
+    border-bottom: solid 1px #7a7a7a;
+}
+#local {
+    margin: auto;
+}

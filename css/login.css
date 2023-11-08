@@ -1,0 +1,28 @@
+@charset "UTF-8";
+body{
+    background-color: rgb(39, 39, 39);
+}
+main {
+    margin: 100px auto;
+}
+.content-form {
+    background-color: rgb(117, 117, 117);
+    color: rgb(54, 13, 0);
+}
+#button-sign, #button-log{
+    border-bottom: solid 2px rgba(46, 46, 46, 0.979);
+}
+.button-appear {
+    background-color: rgba(46, 46, 46, 0.979);
+    color: rgb(255, 255, 255);
+}
+.form-hidden {
+    display: none;
+}
+form button[type="button"]{
+    border: solid 2px rgba(46, 46, 46, 0.979);
+}
+button[type="button"]:hover {
+    background-color: rgba(95, 95, 95, 0.979);
+    color: rgba(255, 255, 255, 0.979);
+}
