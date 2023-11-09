@@ -24,17 +24,17 @@ Note:- This is a Sample Project font-end. You can directly run the html file to 
 
 #### Some Screenshots for the project:
 - Home Page
-![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/home.jpg)
+- ![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/home.jpg)
 - categories Page
-![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/categories.jpg)
+- ![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/categories.jpg)
 - product Page
-![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/product.jpg)
+- ![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/product.jpg)
 - cart 1 Page
-![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/cart-input.jpg)
+- ![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/cart-input.jpg)
 - cart 2 Page
-![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/cart-output.jpg)
+- ![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/cart-output.jpg)
 - cart 3 Page
-![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/cart-success.jpg)
+- ![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/cart-success.jpg)
 
 <bold>Thanks a lot,</bold>
 <br/>Project personal<br/>
