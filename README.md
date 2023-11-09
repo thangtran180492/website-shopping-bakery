@@ -36,6 +36,6 @@ Note:- This is a Sample Project font-end. You can directly run the html file to 
 ![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/cart-success.jpg)
 
 <bold>Thanks a lot,</bold>
-<br/>Projectr personal<br/>
+<br/>Project personal<br/>
 <b>Viet Hung (Sai)</b>
 
