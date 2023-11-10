@@ -23,6 +23,7 @@ This is the cake shop's ordering website
 Note:- This is a Sample Project font-end. You can directly run the html file to see the website interface open it with visual studio code
 
 #### Some Screenshots for the project:
+- VIEW - <https://thangtran180492.github.io/website-shopping-bakery>
 #### Home Page
 ![image](https://github.com/thangtran180492/website-shopping-bakery/blob/main/content/home.jpg)
 #### categories Page
